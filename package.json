@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node configs/index.js",
     "dev": "nodemon configs/index.js",
-    "lint": "eslint .eslintrc.json ."
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",

@@ -12,11 +12,11 @@ export const getProdutos = (req, res, next) => {
 };
 
 export const postProduto = (req, res, next) => {
-    const { nome, descricao, preco, data_atualizado } = req.body;
+    const { nome, descricao, preco } = req.body;
   
     // Insere os dados na tabela produtos
-    db.query('INSERT INTO produtos (nome, descricao, preco, data_atualizado) VALUES (?, ?, ?, ?)', 
-             [nome, descricao, preco, data_atualizado], 
+    db.query('INSERT INTO produtos (nome, descricao, preco) VALUES (?, ?, ?)', 
+             [nome, descricao, preco], 
              (error) => {
                if (error) {
                  console.error('Erro ao criar produto:', error);
