@@ -7,7 +7,7 @@ VALUES
     ('Ana', 'Oliveira', 'ana.oliveira@example.com', 28),
     ('Carlos', 'Rodrigues', 'carlos.rodrigues@example.com', 40);
 
--- Insere dados aleatórios na tabela produtos
+
 INSERT INTO produtos (nome, descricao, preco)
 VALUES 
     ('Camisa', 'Camisa de algodão', 29.99),
